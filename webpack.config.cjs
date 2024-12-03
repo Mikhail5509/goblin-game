@@ -22,11 +22,14 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'], // Для работы с CSS
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource', // Для работы с изображениями
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/[name][hash][ext]', // Путь для изображений
+        },
       },
     ],
   },
