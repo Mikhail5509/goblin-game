@@ -1,9 +1,13 @@
-// goblin.js
+import goblinImage from '../assets/goblin.png';
+
 export default class Goblin {
     constructor() {
         this.element = document.createElement('div');
-        this.element.classList.add('goblin'); // Добавление CSS класса для стилизации
-        document.getElementById('game-area').appendChild(this.element); // Добавляем элемент в игровую область
+        this.element.classList.add('goblin');
+        this.element.style.backgroundImage = `url(${goblinImage})`; // Устанавливаем фон
+        this.element.style.backgroundSize = 'cover'; // Подгоняем изображение под размеры
+        document.getElementById('game-area').appendChild(this.element);
+        this.isVisible = false;
     }
 
     // Метод для появления гоблина

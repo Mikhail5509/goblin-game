@@ -26,6 +26,7 @@ h1 {
   height: 50px;
   background-color: green;
   border-radius: 50%;
+  display: block;
   cursor: pointer;
   position: absolute;
 }
