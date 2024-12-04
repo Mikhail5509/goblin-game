@@ -4,7 +4,9 @@
   "scripts": {
     "lint": "eslint src/js/**/*.js",
     "test": "jest",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist"
+
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
