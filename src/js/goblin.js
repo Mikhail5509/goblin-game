@@ -11,7 +11,7 @@ export default class Goblin {
   }
 
   appear() {
-    this.element.style.display = 'block';
+    this.element.style.visibility = 'visible';
     this.element.style.position = 'absolute';
 
     const gameArea = document.getElementById('game-area');
@@ -29,7 +29,7 @@ export default class Goblin {
   }
 
   disappear() {
-    this.element.style.display = 'none';
+    this.element.style.visibility = 'hidden';
     this.isVisible = false;
   }
 }
