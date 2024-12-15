@@ -1,3 +1,4 @@
+import '../styles.css';
 import Goblin from './goblin.js';
 import Score from './score.js';
 
